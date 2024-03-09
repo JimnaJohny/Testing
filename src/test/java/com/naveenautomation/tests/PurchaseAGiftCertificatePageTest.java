@@ -15,7 +15,7 @@ public class PurchaseAGiftCertificatePageTest extends TestBase {
 	}
 
 	@Test
-	public void registration() {
+	public void purchaseGiftCertificate() {
 		PurchaseAGiftCertificatePage page = new PurchaseAGiftCertificatePage();
 		page.giftCertificate(RandomStringUtils.randomAlphabetic(5), "User2@gmail.com",
 				RandomStringUtils.randomAlphabetic(5), "user1@gmail.com", RandomStringUtils.randomAlphabetic(10),

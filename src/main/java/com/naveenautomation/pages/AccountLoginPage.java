@@ -41,8 +41,6 @@
 //
 //}
 
-
-
 package com.naveenautomation.pages;
 
 import org.openqa.selenium.WebElement;
@@ -66,6 +64,9 @@ public class AccountLoginPage extends TestBase {
 	@FindBy(css = "#content div>div form>input")
 	WebElement loginBtn;
 
+	@FindBy(css = "div[class='alert alert-danger alert-dismissible']")
+	WebElement bannerText;
+
 	private void enterEmail(String email) {
 		loginInput.sendKeys(email);
 	}
@@ -82,7 +83,16 @@ public class AccountLoginPage extends TestBase {
 		enterEmail(email);
 		enterPwd(pwd);
 		clickLogin();
-		return new MyAccountPage();//page chaining concept
+		return new MyAccountPage();// page chaining concept
 	}
 
+	public void submitLoginWithWrongCredentials(String email, String pwd) {
+		enterEmail(email);
+		enterPwd(pwd);
+		clickLogin();
+	}
+
+	public String getWarnigMsg() {
+		return bannerText.getText();
+	}
 }

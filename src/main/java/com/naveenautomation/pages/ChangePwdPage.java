@@ -14,7 +14,7 @@ public class ChangePwdPage extends TestBase {
 
 	@FindBy(id = "input-password")
 	WebElement pwd;
-	
+
 	@FindBy(id = "input-confirm")
 	WebElement confirmPwd;
 
@@ -24,8 +24,9 @@ public class ChangePwdPage extends TestBase {
 	private void enterPwd(String pwd) {
 		this.pwd.sendKeys(pwd);
 	}
-	
+
 	private void enterConfirmPwd(String pwd) {
+		logger.info("entering Password " + pwd);
 		confirmPwd.sendKeys(pwd);
 	}
 
@@ -37,7 +38,7 @@ public class ChangePwdPage extends TestBase {
 		enterPwd(pwd);
 		enterConfirmPwd(confirmPwd);
 		clickContinueBtn();
-		return new MyAccountPage();//page chaining concept
+		return new MyAccountPage();
 	}
 
 }

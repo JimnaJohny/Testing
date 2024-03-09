@@ -19,7 +19,7 @@ public class ContactUsPage extends TestBase {
 	WebElement yourName;
 
 	@FindBy(id = "input-email")
-	WebElement emailAddress;
+	WebElement emailAddress1;
 
 	@FindBy(id = "input-enquiry")
 	WebElement enquiry;
@@ -36,7 +36,7 @@ public class ContactUsPage extends TestBase {
 	}
 
 	private void enterEmailAddress(String email) {
-		emailAddress.sendKeys(email);
+		emailAddress1.sendKeys(email);
 	}
 
 	private void enterEnquiry(String enquiryQn) {
