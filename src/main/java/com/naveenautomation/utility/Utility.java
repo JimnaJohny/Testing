@@ -8,8 +8,13 @@ import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.naveenautomation.TestBase.TestBase;
 
@@ -35,7 +40,7 @@ public class Utility extends TestBase {
 
 	public static String generateRandomEmail() {
 		String email = RandomStringUtils.randomNumeric(3);
-		String emailID = "Manvir" + email + "@gmail.com";
+		String emailID = "Jimna" + email + "@gmail.com";
 		return emailID;
 	}
 
@@ -65,6 +70,40 @@ public class Utility extends TestBase {
 		} catch (InterruptedException e) {
 
 		}
+	}
+	
+	// Separate methods wait for each element
+	
+	public static WebElement waitForElementToBeVisible(WebElement element, int timeotinSec) {
+		return new WebDriverWait(driver, timeotinSec).until(ExpectedConditions.visibilityOf(element));
+	}
+	public static WebElement waitForElementToBeClickable(WebElement element, int timeotinSec) {
+		return new WebDriverWait(driver, timeotinSec).until(ExpectedConditions.elementToBeClickable(element));
+	}
+	public static Boolean waitForElementToBeSelectable(WebElement element, int timeotinSec) {
+		return new WebDriverWait(driver, timeotinSec).until(ExpectedConditions.elementSelectionStateToBe(element, false));
+	}
+	public static Alert waitForAlertToBePresent(int timeotinSec) {
+		return new WebDriverWait(driver, timeotinSec).until(ExpectedConditions.alertIsPresent());
+	}
+	
+	public static void sendText(WebElement element, String text) {
+		waitForElementToBeVisible(element, 15).sendKeys(text);
+	}
+	public static void clickOnElement(WebElement element) {
+		waitForElementToBeClickable(element, 15).click();;
+	}
+	public static void selectElement(WebElement element) {
+		
+	}
+	
+	public void acceptAlert() {
+		if(waitForAlertToBePresent(5)!=null)
+		driver.switchTo().alert().accept();
+	}
+	public void dismissAlert() {
+		if(waitForAlertToBePresent(5)!=null)
+		driver.switchTo().alert().dismiss();
 	}
 
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.naveenautomation.TestBase.TestBase;
+import com.naveenautomation.utility.Utility;
 
 public class AccountLoginPageAssignment extends TestBase {
 
@@ -22,15 +23,18 @@ public class AccountLoginPageAssignment extends TestBase {
 	WebElement loginBtn;
 
 	private void enterEmail(String email) {
-		loginInput.sendKeys(email);
+		Utility.sendText(loginBtn, email);
+		//loginInput.sendKeys(email);
 	}
 
 	private void enterPwd(String pwd) {
-		pwdInput.sendKeys(pwd);
+		Utility.sendText(pwdInput, pwd);
+		//pwdInput.sendKeys(pwd);
 	}
 
 	private void clickLogin() {
-		loginBtn.click();
+		Utility.clickOnElement(loginBtn);
+		//loginBtn.click();
 	}
 
 	public MyAccountPageAssignment submitLogin(String email, String pwd) {

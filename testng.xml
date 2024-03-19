@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+
+		<listener
+			class-name="com.naveenautomation.Listeners.CustomListener"></listener>
+		<listener
+			class-name="com.naveenautomation.Listeners.TransformerForRetry" />
+		<listener
+			class-name="com.naveenautomation.Listeners.ExtentReportListener"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.naveenautomation.tests.AccountLoginPageTest" />
+			<class
+				name="com.naveenautomation.tests.RegisterAccountPageTest" />
+			<class name="com.naveenautomation.tests.MyAccountPageTest" />
+			<class name="com.naveenautomation.tests.AddressBookPageTest" />
+			<class name="com.naveenautomation.tests.ContactUsPageTest" />
+			<class
+				name="com.naveenautomation.tests.PurchaseAGiftCertificatePageTest" />
+			<class
+				name="com.naveenautomation.tests.LaptopsAndNotebooksPageTest" />
+			<class
+				name="com.naveenautomation.tests.AccountLoginPageForgotPasswordTest" />
+			<class
+				name="com.naveenautomation.tests.ForgotYourPasswordPageTest" />
+			<class name="com.naveenautomation.tests.AccountLogoutPageTest" />
+			<class
+				name="com.naveenautomation.tests.AccountLoginPageTestWithWrongCredentials" />
+			<class
+				name="com.naveenautomation.tests.MyAccountPageEditAccountTest" />
+			<class
+				name="com.naveenautomation.tests.MyAccountPageNewsLetterTest" />
+			<class name="com.naveenautomation.tests.MyWishListPageTest" />
+			<class name="com.naveenautomation.tests.HPLP3065PageTest" />
+			<class
+				name="com.naveenautomation.tests.MyAccountPageRemoveFromCartTest" />
+			<class
+				name="com.naveenautomation.tests.LaptopsAndNotebooksPageComparisonTest" />
+			<class
+				name="com.naveenautomation.tests.ProductComparisonPageTest" />
+			<class
+				name="com.naveenautomation.tests.MyAccountPageUnsubscribeNewsLetterTest" />
+			<class name="com.naveenautomation.tests.ShoppingCartPageTest" />
+			<class name="com.naveenautomation.tests.LogoDisplayTest" />
+			<class name="com.naveenautomation.tests.ProductReturnsPageTest" />
+			<class name="com.naveenautomation.tests.OrderHistoryPageTest" />
+			<class name="com.naveenautomation.tests.ApplePageTest" />
+			<class name="com.naveenautomation.tests.SpecialOffersPageTest" />
+			<class name="com.naveenautomation.tests.SuccessPageTest" />
+			<class name="com.naveenautomation.tests.AppleCinema30PageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

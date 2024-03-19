@@ -10,7 +10,6 @@ import com.naveenautomation.pages.AccountLoginPage;
 import com.naveenautomation.pages.AddAddressPage;
 import com.naveenautomation.pages.AddressBookPage;
 import com.naveenautomation.pages.MyAccountPage;
-import com.naveenautomation.utility.Utility;
 
 public class AddressBookPageTest extends TestBase {
 	AccountLoginPage page;

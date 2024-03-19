@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.naveenautomation.TestBase.TestBase;
+import com.naveenautomation.utility.Utility;
 
 public class AddAddressPage extends TestBase {
 
@@ -41,27 +42,33 @@ public class AddAddressPage extends TestBase {
 	WebElement continueBtn;
 
 	private void enterFirstName(String name) {
-		firstName.sendKeys(name);
+		Utility.sendText(firstName, name);
+		//firstName.sendKeys(name);
 	}
 
 	private void enterLastName(String name) {
-		lastName.sendKeys(name);
+		Utility.sendText(lastName, name);
+		//lastName.sendKeys(name);
 	}
 
 	private void enterCompany(String name) {
-		companyName.sendKeys(name);
+		Utility.sendText(companyName, name);
+		//companyName.sendKeys(name);
 	}
 
 	private void enterAddressOne(String name) {
-		addressOne.sendKeys(name);
+		Utility.sendText(addressOne, name);
+		//addressOne.sendKeys(name);
 	}
 
 	private void enterCity(String name) {
-		city.sendKeys(name);
+		Utility.sendText(city, name);
+		//city.sendKeys(name);
 	}
 
 	private void enterPostCode(String name) {
-		postCode.sendKeys(name);
+		Utility.sendText(postCode, name);
+		//postCode.sendKeys(name);
 	}
 
 	private void selectCountry(String name) {
