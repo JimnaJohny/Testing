@@ -1,6 +1,6 @@
 package com.naveenautomation.pages;
 
-import org.apache.commons.lang.RandomStringUtils;
+//import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,14 +38,14 @@ public class ProductReturnsPage extends TestBase{
 	WebElement text;
 	
 	public void fillForm() {
-		firstName.sendKeys(RandomStringUtils.randomAlphabetic(5));
-		lastName.sendKeys(RandomStringUtils.randomAlphabetic(5));
+		firstName.sendKeys("dfgvh");
+		lastName.sendKeys("dfcgvbh");
 		email.clear();
 		email.sendKeys(Utility.generateRandomEmail());
-		telephone.sendKeys(RandomStringUtils.randomNumeric(10));
-		orderId.sendKeys(RandomStringUtils.randomAlphabetic(5));
-		productName.sendKeys(RandomStringUtils.randomAlphabetic(5));
-		productCode.sendKeys(RandomStringUtils.randomAlphabetic(5));
+		telephone.sendKeys("123456789");
+		orderId.sendKeys("dxfcgvbh");
+		productName.sendKeys("xcvbn");
+		productCode.sendKeys("fcgvbhjn");
 		quantity.sendKeys("1");
 		radioBtnReasonForReturn.click();
 		radioBtnOpened.click();

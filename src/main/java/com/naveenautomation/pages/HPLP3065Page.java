@@ -1,6 +1,6 @@
 package com.naveenautomation.pages;
 
-import org.apache.commons.lang.RandomStringUtils;
+//import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,14 +38,14 @@ public class HPLP3065Page extends TestBase{
 	
 	public void clickOnReviewButtonError() {
 		reviewBtn.click();
-		inputReview.sendKeys(RandomStringUtils.randomAlphabetic(5));
+		inputReview.sendKeys("dfxcgvbh");
 		review.click();
 		continueBtn.click();
 	}
 	
 	public void clickOnReviewButton() {
 		reviewBtn.click();
-		inputReview.sendKeys(RandomStringUtils.randomAlphabetic(26));
+		inputReview.sendKeys("dxcfgvbhjn");
 		review.click();
 		continueBtn.click();
 	}

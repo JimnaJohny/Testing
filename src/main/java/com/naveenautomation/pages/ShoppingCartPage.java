@@ -1,6 +1,6 @@
 package com.naveenautomation.pages;
 
-import org.apache.commons.lang.RandomStringUtils;
+//import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,7 +26,7 @@ public class ShoppingCartPage extends TestBase {
 
 	public void clickUseCouponCode() {
 		useCoupon.click();
-		couponCode.sendKeys(RandomStringUtils.randomAlphabetic(5));
+		couponCode.sendKeys("dfcgvbh");
 		couponCodeBtn.click();
 	}
 
