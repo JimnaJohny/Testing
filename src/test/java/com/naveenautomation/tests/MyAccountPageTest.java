@@ -25,7 +25,7 @@ public class MyAccountPageTest extends TestBase {
 	@Test
 	public void validateLogin() {
 		AccountLoginPage page = new AccountLoginPage();
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		String myAccountText = myAccountPage.getMyAccountText();
 		//Assert.assertEquals(myAccountText, "My Munni Account");//Incorrect Assertion
 		Assert.assertEquals(myAccountText, "My Account");//Correcet Assertion

@@ -25,7 +25,7 @@ public class ApplePageTest extends TestBase{
 
 	@Test()
 	public void viewAppleProducts() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		brands = myAccountPage.clickBrands();
 		applePage=brands.clickAppleBrand();
 		String bannerText = applePage.getText();

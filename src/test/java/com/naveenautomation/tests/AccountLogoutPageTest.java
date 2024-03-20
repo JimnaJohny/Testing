@@ -23,7 +23,7 @@ public class AccountLogoutPageTest extends TestBase {
 
 	@Test
 	public void validateUserCanLogout() {
-		page = login.submitLogin("testing@gmail.com", "Password1");
+		page = login.submitLogin("testing2@gmail.com", "Password1");
 		logout = page.clickLogOut();
 		String logoutMsg = logout.isLogout();
 		Assert.assertEquals(logoutMsg, "You have been logged off your account. It is now safe to leave the computer.");

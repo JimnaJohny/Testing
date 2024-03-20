@@ -25,7 +25,7 @@ public class AppleCinema30PageTest extends TestBase {
 
 	@Test()
 	public void errorInAddToCart() throws InterruptedException {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		desktop = myAccountPage.viewDesktops();
 		apple = desktop.clickOnDesktop();
 		apple.toUploadFile();

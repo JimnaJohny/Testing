@@ -23,7 +23,7 @@ public class AccountLoginPageForgotPasswordTest extends TestBase {
 	@Test
 	public void validateUserCanResetPwd() {
 		forgotPwd = login.clickForgotBtn();
-		login = forgotPwd.submitForgotPassword("testing@gmail.com");
+		login = forgotPwd.submitForgotPassword("testing2@gmail.com");
 		String bannerText = login.getBannerText();
 		Assert.assertEquals(bannerText, "An email with a confirmation link has been sent your email address.");
 	}

@@ -24,7 +24,7 @@ public class HPLP3065PageTest extends TestBase{
 
 	@Test()
 	public void addToCart() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		laptopAndNotebookPage = myAccountPage.clickOnLaptopsAndNoteBooks();
 		laptop = laptopAndNotebookPage.clickOnAddToCart();
 		laptop.clickOnaddToCartButton();
@@ -33,7 +33,7 @@ public class HPLP3065PageTest extends TestBase{
 	}
 	@Test()
 	public void getreviewError() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		laptopAndNotebookPage = myAccountPage.clickOnLaptopsAndNoteBooks();
 		laptop = laptopAndNotebookPage.clickOnItem();
 		laptop.clickOnReviewButtonError();
@@ -43,7 +43,7 @@ public class HPLP3065PageTest extends TestBase{
 	
 	@Test()
 	public void getreview() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		laptopAndNotebookPage = myAccountPage.clickOnLaptopsAndNoteBooks();
 		laptop = laptopAndNotebookPage.clickOnItem();
 		laptop.clickOnReviewButton();

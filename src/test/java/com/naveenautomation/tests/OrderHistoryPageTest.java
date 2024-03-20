@@ -23,7 +23,7 @@ public class OrderHistoryPageTest extends TestBase {
 
 	@Test()
 	public void viewOrderHistory() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		orderHistory = myAccountPage.clickMyAccountBtn();
 		String bannerText = orderHistory.getText();
 		Assert.assertEquals(bannerText, "Order History");

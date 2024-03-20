@@ -23,7 +23,7 @@ public class SpecialOffersPageTest extends TestBase{
 
 	@Test()
 	public void viewSpecialOffers() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		specialOffers = myAccountPage.clickSpecials();
 		String bannerText = specialOffers.getText();
 		Assert.assertEquals(bannerText, "Special Offers");

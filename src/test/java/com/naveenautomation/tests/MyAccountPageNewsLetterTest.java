@@ -23,7 +23,7 @@ public class MyAccountPageNewsLetterTest extends TestBase {
 
 	@Test
 	public void subscribeNewsLetter() {
-		page = login.submitLogin("testing@gmail.com", "Password1");
+		page = login.submitLogin("testing2@gmail.com", "Password1");
 		newsLetter = page.clickOnNewsLetter();
 		page = newsLetter.clickContinue();
 		String bannerText = page.getBannerText();

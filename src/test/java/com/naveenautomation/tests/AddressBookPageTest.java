@@ -25,7 +25,7 @@ public class AddressBookPageTest extends TestBase {
 
 	@Test()
 	public void validateUserCanAddNewAddress() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		addressBookPage = myAccountPage.clickSideNavMenuItem("Address Book");
 		addAddressPage = addressBookPage.clickNewAddressBtn();
 //		addressBookPage = addAddressPage.SubmitAddress(Utility.generateRandomString(10),

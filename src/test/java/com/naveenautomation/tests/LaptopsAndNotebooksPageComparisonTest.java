@@ -23,7 +23,7 @@ public class LaptopsAndNotebooksPageComparisonTest extends TestBase{
 
 	@Test()
 	public void addToWishList() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		laptopAndNotebookPage = myAccountPage.clickOnLaptopsAndNoteBooks();
 		laptopAndNotebookPage.clickOnAddToComparisonList();
 		String bannerText = laptopAndNotebookPage.getBannerText();

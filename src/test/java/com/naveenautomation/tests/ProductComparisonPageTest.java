@@ -25,7 +25,7 @@ public class ProductComparisonPageTest extends TestBase{
 
 	@Test()
 	public void removeFromComparisonList() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		laptopAndNotebookPage = myAccountPage.clickOnLaptopsAndNoteBooks();
 		comparison=laptopAndNotebookPage.getComparisonList();
 		comparison.removeFromComarisonList();

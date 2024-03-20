@@ -20,7 +20,7 @@ public class MyAccountPageRemoveFromCartTest extends TestBase {
 
 	@Test()
 	public void removeFromCart() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		myAccountPage.clickCartBtn();
 	}
 

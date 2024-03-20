@@ -23,7 +23,7 @@ public class MyWishListPageTest extends TestBase {
 
 	@Test()
 	public void removeFromWishList() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		wishList = myAccountPage.clickWishList();
 		wishList.RemoveFromWishList();
 		String bannerText = wishList.getBannerText();

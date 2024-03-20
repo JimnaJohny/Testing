@@ -22,7 +22,7 @@ ShoppingCartPage shopping;
 
 	@Test()
 	public void applyCouponCode() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		shopping = myAccountPage.clickShoppingCart();
 		shopping.clickUseCouponCode();;
 		String bannerText = shopping.getErrorText();

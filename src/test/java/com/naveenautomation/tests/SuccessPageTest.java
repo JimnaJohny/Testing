@@ -25,7 +25,7 @@ public class SuccessPageTest extends TestBase{
 
 	@Test()
 	public void checkout() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		checkout = myAccountPage.clickCheckOut();
 		success= checkout.fillCheckoutInfo();
 		String bannerText = success.getText();

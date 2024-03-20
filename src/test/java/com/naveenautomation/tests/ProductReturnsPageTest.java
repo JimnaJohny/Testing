@@ -23,7 +23,7 @@ public class ProductReturnsPageTest extends TestBase{
 
 	@Test()
 	public void returnProduct() {
-		myAccountPage = page.submitLogin("testing@gmail.com", "Password1");
+		myAccountPage = page.submitLogin("testing2@gmail.com", "Password1");
 		returns = myAccountPage.clickReturns();
 		returns.fillForm();
 		String bannerText = returns.getText();

@@ -24,7 +24,7 @@ public class MyAccountPageEditAccountTest extends TestBase {
 
 	@Test
 	public void validateUserCanResetPwd() {
-		page = login.submitLogin("testing@gmail.com", "Password1");
+		page = login.submitLogin("testing2@gmail.com", "Password1");
 		information = page.clickOnEditAccount();
 		page = information.editAccount("456789123");
 		String bannerText = page.getBannerText();
